@@ -21,8 +21,7 @@ for bag in bags:
         else:
             bags_inside.update({"" + bag[word + 1] + " " + bag[word + 2]: bag[word]})
             word = word + 4
-    bags_classed.append(Bag("" + bag[0] + bag[1], bags_inside))
-    print(bags_classed[0])
+    bags_classed.append(Bag("" + bag[0] + " " + bag[1], bags_inside))
+    print(bags_classed[0].color)
+    print(bags_classed[0].bags_inside)
     quit()
-
-print(bags_classed[0])
